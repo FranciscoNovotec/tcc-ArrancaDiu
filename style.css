@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-grow: 1;
+}
+
+nav a {
+     color: #f27f3e;
+      font-size: 20px;
+      text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.botao {
+    background-color: #f27f3e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 32px; 
+}
+
+
+.produtos {
+    padding: 40px;
+    background-color: #f27f3e;
+    text-align: center;
+
+}
+
+.produtos h2 {
+    color: #f27f3e;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+.produto {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.produto h3 {
+    color: #333;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.produto p {
+    color: #777;
+    font-size: 18px;
+}
+
+
+
+.historia-kamis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.historia-texto {
+    flex: 1;
+    max-width: 50%;
+}
+
+.historia-texto h2 {
+    font-size: 2em;
+    color: #f27f3e;
+    margin-bottom: 10px;
+}
+
+.historia-texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.historia-imagem {
+    flex: 1;
+    max-width: 45%;
+}
+
+
+h1 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+
+h2 {
+  color: black;
+  padding-bottom: 20px;
+  font-size: 50px;
+
+}
+
+.historia-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer-kamis {
+  background-color: #ff7f32; 
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  color: #fff; 
+  border-top: 1px solid #e67e22;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+.esquerda p,
+.meio p,
+.right p {
+  margin: 10px 0;
+}
+
+
+.footer-section a {
+  color: #fff; 
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #e67e22; 
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 40px; 
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); 
+}
+
+
+.right p {
+  margin-top: 10px;
+  color: #fff; 
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .produtos {
+        padding: 20px;
+    }
+
+    .produto {
+        width: 48%;
+        margin: 10px 0;
+    }
+
+    .historia-kamis {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .historia-texto, .historia-imagem {
+        max-width: 100%;
+    }
+
+    .historia-texto h2 {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    .produtos h2 {
+        font-size: 28px;
+    }
+
+    .produto {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .produtos {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
